@@ -65,7 +65,7 @@ public class HeroController {
 	// Delete
 	// Should return 204 'no content' on success
 	@DeleteMapping("delete/id/{id}")
-	public ResponseEntity<?> deleteHeroById(Integer id){
+	public ResponseEntity<?> deleteHeroById(@PathVariable Integer id){
 		service.delete(id);
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}

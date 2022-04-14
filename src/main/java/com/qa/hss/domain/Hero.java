@@ -84,5 +84,4 @@ public class Hero {
 				+ ", tragicBackstory=" + tragicBackstory + "]";
 	}
 	
-	
 }
