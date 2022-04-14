@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.qa.hss.domain.Hero;
 import com.qa.hss.repo.HeroRepo;
 
+@Service
 public class HeroService {
 
 	private HeroRepo repo;

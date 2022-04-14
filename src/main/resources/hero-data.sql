@@ -1,4 +1,6 @@
-INSERT INTO programmer (bugs_made,lpm,name) VALUES
-(1000,1,'Dumbo Dummy'),
-(0,100,'Literally Einstein'),
-(4,40,'John Smith');
+INSERT INTO hero
+(name, power_level, powers, tragic_backstory) 
+VALUES
+("Batman", 10, "He's just rich and smart", "parents died in a robbery gone wrong"),
+("John Smith", 0, "None", "Stubbed toe this morning"),
+("Cool-Awesome-man", 10000, "Super speed, super strength, can control time", "Entire family died in tragic blimp accident");
