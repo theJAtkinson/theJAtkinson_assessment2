@@ -11,23 +11,29 @@
 </head>
 
 <body>
-    <h2>Hero System</h2>
-    <div class="row">
-        <div class="col">
-            <input type="text" id="inputName" class="form-control" placeholder="enter name of Hero" />
-            <input type="number" id="inputPowerLevel" class="form-control mt-2"
-                placeholder="enter power level of Hero" />
-            <input type="text" id="inputPowers" class="form-control mt-2" placeholder="enter Heroes powers" />
-            <input type="text" id="inputBackstory" class="form-control mt-2" placeholder="enter Heroes tragic backstory" />
-            <button type="button" id="buttonCreate" class="btn btn-primary mt-2" >Add Hero</button>
+    <h2 class="d-flex p-2 justify-content-center">Hero System</h2>
+    <div class="d-flex p-2">
+        <div class="d-flex flex-col">
+            <div>
+                <h3>Hero Creator/Updator</h3>
+                <input type="text" id="inputName" class="form-control" placeholder="enter name of Hero" />
+                <input type="number" id="inputPowerLevel" class="form-control mt-2"
+                    placeholder="enter power level of Hero" />
+                <input type="text" id="inputPowers" class="form-control mt-2" placeholder="enter Heroes powers" />
+                <input type="text" id="inputBackstory" class="form-control mt-2"
+                    placeholder="enter Heroes tragic backstory" />
+                <button type="button" id="buttonCreate" class="btn btn-primary mt-2">Add Hero</button>
+                <button type="button" id="buttonCreate" class="btn btn-primary mt-2">Update Hero</button>
+                <input type="text" id="inputId" class="form-control" placeholder="enter Id of Hero to be Updated" />
+            </div>
         </div>
-
-        <div class="col">
-            <h3> List of Heroes</h3>
-            <ul id="listHero"></ul>
+        <div class="d-flex flex-col">
+            <div>
+                <h3>List of Heroes</h3>
+                <ul id="listHero"></ul>
+            </div>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./script.js"></script>

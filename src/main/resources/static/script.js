@@ -13,6 +13,7 @@ const addItemToList = item => {
     child.id = item.id;
     child.innerHTML = `${JSON.stringify(item)}`;
     listHero.appendChild(child);
+    console.log(child);
 }
 
 //get all, write to list
