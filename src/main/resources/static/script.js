@@ -8,13 +8,14 @@ const inputBackstory = document.getElementById(`inputBackstory`);
 const buttonCreate = document.getElementById(`buttonCreate`);
 const buttonUpdate = document.getElementById(`buttonUpdate`);
 const inputId = document.getElementById(`inputId`);
-inputId
+const buttonDelete = document.getElementById(`buttonDelete`);
+const buttonRead = document.getElementById(`buttonRead`);
 
 //function to add to unordered list
 const addItemToList = item => {
     const child = document.createElement(`li`);
     child.id = item.id;
-    child.innerHTML = `${JSON.stringify(item)}`;
+    child.innerHTML = `<hr/>ID: ${item.id}<br/>Name: ${item.name}<br/>Power Level: ${item.powerLevel}<br/>Powers: ${item.powers}<br/>Tragic Backstory: ${item.tragicBackstory}<br/>`;
     output.appendChild(child);
     console.log(child);
 }
@@ -86,5 +87,22 @@ const deleteId = (id) => {
             console.log(err);
         });
 }
-DOM.buttonDeleteId.onclick = () => deleteId(DOM.deleteId.value);
+buttonDelete.onclick = () => deleteId(inputId.value);
 
+const getById = (id) => {
+    axios.get(`http://localhost:8080/read/id/${id}`)
+        .then((response) => {
+            output.innerHTML = ``;
+            addItemToList(response.data);
+        }).catch((err) => {
+            console.log(err);
+        });
+}
+
+buttonRead.onclick = () => {
+    if (inputId.value) {
+        getById(inputId.value);
+    } else {
+        getAll();
+    }
+}

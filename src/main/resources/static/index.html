@@ -11,24 +11,30 @@
 </head>
 
 <body>
-    <h2 class="d-flex p-2 justify-content-center m-4">Hero System</h2>
+    <h2 class="d-flex p-2 justify-content-center m-4"><b>Hero Storage System</b></h2>
     <div class="container-xl">
         <div class="row align-items-start">
 
             <div class="col-4 d-flex flex-column  border border-dark rounded m-2" id="input" style="margin-top: 1px;">
-                <h3 class="mt-2">Hero Creator/Updator</h3>
-                <input type="text" id="inputName" class="form-control" placeholder="Hero name" />
-                <input type="number" id="inputPowerLevel" class="form-control mt-2" placeholder="Hero power level" />
-                <input type="text" id="inputPowers" class="form-control mt-2" placeholder="Hero powers" />
-                <input type="text" id="inputBackstory" class="form-control mt-2" placeholder="Hero tragic backstory" />
+                <h3 class="m-2"><b>Hero Creator/Updator</b></h3>
+                <h6>Name</h6>
+                <input type="text" id="inputName" class="form-control mb-2" placeholder="Name" />
+                <h6>Power Level</h6>
+                <input type="number" id="inputPowerLevel" class="form-control mb-2" placeholder="Power Level" />
+                <h6>Powers</h6>
+                <input type="text" id="inputPowers" class="form-control mb-2" placeholder="Powers" />
+                <h6>Tragic Backstory</h6>
+                <input type="text" id="inputBackstory" class="form-control mb-2" placeholder="Tragic Backstory" />
                 <button type="button" id="buttonCreate" class="btn btn-dark m-2">Add Hero</button>
-                <input type="text" id="inputId" class="form-control" placeholder="Hero Id for update/delete" />
+                <h6>ID for delete/update/read</h6>
+                <input type="text" id="inputId" class="form-control" placeholder="Hero Id" />
                 <button type="button" id="buttonUpdate" class="btn btn-dark m-2">Update Hero</button>
                 <button type="button" id="buttonDelete" class="btn btn-dark m-2">Delete Hero</button>
+                <button type="button" id="buttonRead" class="btn btn-dark m-2">Read Hero</button>
             </div>
 
             <div class="col-7 d-flex flex-column align-items-stretch border border-dark rounded m-2">
-                <h3>Hero List</h3>
+                <h3 class="m-2"><b>Hero List</b></h3>
                 <ul id="output"></ul>
             </div>
 
