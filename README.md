@@ -20,13 +20,32 @@ Throughout the project I utilized the branch function of Git to distinguish betw
 These branches were linked largely to the epics that my user stories were split into. The reason for a less granular approach was largely due to the simplistic nature of the project.
 
 Once development of the feature was completed I would use a pull request on Github to merge the feature into the "dev" branch. A disply of completed pull requests are seen [here](https://github.com/theJAtkinson/theJAtkinson_assessment2/pulls?q=is%3Apr+is%3Aclosed).
+
 ### SQL Data Design
 Compared to the first project, the SQL database design is much simpler. In this case there is only one table and a handful of parameters or columns: the heroes name, a description of their powers, an integer power level and
 a tragic backstory.
 
 ### UI Design
+I chose a simple one-page design which utilizes various buttons to operate the CRUD functions. 
+
+IMAGE OF DESIGN
+
+## Running the Program
+
+To run the program itself you can simply download java, more specifically JRE.
+
+The download for Java can be found [here](https://www.java.com/download/ie_manual.jsp), with further installation instructions and system requirements included. With the Java installed one can run the theJAtkinson_assessment2-1.0.0.jar program from a terminal with the command: 
+>java -jar theJAtkinson_assessment2-1.0.0.jar
+
+Or if you are on windows you can run the theJAtkinson_assessment2-1.0.0.bat included in this repo.
 
 ## Built With
+
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [Eclipse](https://www.eclipse.org/) - IDE
+* [Java](https://www.oracle.com/index.html) - Development and Runtime Environment
+* [SQL](https://www.mysql.com/why-mysql/presentations/mysql-80-overview/) - Database and server
+* [Spring Boot](https://spring.io/projects/spring-boot) - Framework and Integration
 
 ## Authors
 
