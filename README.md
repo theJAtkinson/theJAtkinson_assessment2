@@ -28,7 +28,7 @@ a tragic backstory.
 ### UI Design
 I chose a simple one-page design which utilizes various buttons to operate the CRUD functions. 
 
-IMAGE OF DESIGN
+![UI screenshot](https://i.imgur.com/cMuRVrD.png)
 
 ## Running the Program
 
