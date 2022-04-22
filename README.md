@@ -6,7 +6,8 @@ A simple storage system: creating, storing and retrieving "heroes" from a databa
 ## Project Overview
 
 ### Jira
-I used a Jira based Kanban Board for the organisation and management of this project. 
+I used a Jira based Kanban Board for the organisation and management of this project, the link to which can be found [here](https://jatkinson.atlassian.net/jira/software/projects/QP/boards/4/roadmap). 
+
 Here is one example of a user story I created:
 ![Jira user story example](https://i.imgur.com/6hj1q2s.png)
 As seen above, I use more general user stories but then link them as "blocked by" with the necessary tasks to be completed.
